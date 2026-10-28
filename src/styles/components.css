@@ -1,0 +1,66 @@
+.muted { color: var(--text-muted); }
+.page-title { font-size: 22px; font-weight: 700; line-height: 1.2; }
+.page-sub { color: var(--text-muted); font-size: 12px; margin: 2px 0 16px; }
+
+.card { background: var(--card); border: 1px solid var(--border); padding: 16px; }
+.card > h2 { font-size: 15px; font-weight: 700; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; padding: 6px 16px; border: 1px solid var(--border-strong); border-radius: var(--radius); background: var(--card); font-size: 13px; font-weight: 600; cursor: pointer; text-decoration: none; }
+.btn-primary { background: var(--navy); border-color: var(--navy); color: #fff; }
+.btn-primary:hover { background: var(--navy-hover); }
+.btn-secondary:hover { background: #f1f1ed; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn:focus-visible, .control:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+/* Form controls */
+.control { width: 100%; min-height: 36px; padding: 7px 10px; border: 1px solid var(--border); border-radius: var(--radius); background: #fff; }
+.control::placeholder { color: #9a9a9a; }
+textarea.control { min-height: 130px; resize: vertical; }
+.field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+.field-label { font-size: 12px; font-weight: 600; }
+.field-hint { font-size: 11px; color: var(--text-muted); }
+.field-error { font-size: 12px; color: var(--danger); }
+.field.has-error .control { border-color: var(--danger); }
+.check-row { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.check-row input { width: 16px; height: 16px; accent-color: var(--navy); }
+
+/* Alerts */
+.alert { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; padding: 10px 14px; margin-bottom: 16px; border: 1px solid var(--border); font-size: 13px; }
+.alert-error { background: #fdecea; border-color: var(--danger); color: #7a1a14; }
+.alert-success { background: var(--warn-bg); border-color: var(--warn-border); }
+.alert-info { background: var(--ai-bg); border-color: var(--ai-border); }
+.alert-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* Dialog */
+.overlay { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: rgba(0, 0, 0, 0.45); }
+.dialog { width: 100%; max-width: 380px; padding: 18px; background: #fff; border: 1px solid var(--border-strong); }
+.dialog h2 { font-size: 16px; }
+.dialog p { margin: 4px 0 16px; color: var(--text-muted); font-size: 13px; }
+.dialog-actions { display: flex; gap: 8px; }
+
+/* Status badge, stepper, timeline */
+.badge { display: inline-block; padding: 1px 8px; font-size: 11px; font-weight: 600; border: 1px solid var(--navy); }
+.badge-submitted { background: var(--navy); color: #fff; }
+.badge-under_review { background: #a8d4f7; }
+.badge-under_verification { background: var(--warn-bg); border-color: var(--warn-border); }
+.badge-resolved { background: #dff0e0; border-color: var(--success); }
+
+.stepper { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 8px 0 16px; padding: 0; list-style: none; }
+.step { padding: 10px 6px; text-align: center; font-size: 13px; font-weight: 600; background: #fff; border: 1px solid var(--border-strong); }
+.step.done { background: var(--navy); border-color: var(--navy); color: #fff; }
+.step.current { background: #a8d4f7; border-color: var(--navy); }
+
+.timeline { list-style: none; margin: 8px 0 0; padding: 0; }
+.timeline li { position: relative; padding: 0 0 18px 24px; }
+.timeline li::before { content: ""; position: absolute; left: 0; top: 5px; width: 10px; height: 10px; border-radius: 50%; background: var(--navy); }
+.timeline li:not(:last-child)::after { content: ""; position: absolute; left: 4px; top: 16px; bottom: 0; width: 2px; background: var(--navy); }
+.timeline strong { display: block; }
+.timeline span { font-size: 12px; color: var(--text-muted); }
+
+/* Evidence dropzone */
+.dropzone { padding: 22px 12px; text-align: center; font-size: 12px; color: var(--text-muted); border: 1px dashed #8a8a8a; background: #fafaf8; }
+.dropzone.drag { background: var(--ai-bg); border-color: var(--navy); }
+.file-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }
+.file-list li { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 4px 8px; font-size: 12px; background: #f6f6f3; border: 1px solid var(--border); }
+.link-btn { background: none; border: 0; padding: 0; color: var(--danger); font-size: 12px; font-weight: 600; cursor: pointer; text-decoration: underline; }

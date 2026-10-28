@@ -1,0 +1,53 @@
+/* Login */
+.login-card { max-width: 440px; margin: 40px auto 0; }
+.login-card h1 { font-size: 20px; }
+.pw-wrap { position: relative; }
+.pw-wrap .control { padding-right: 64px; }
+.pw-toggle { position: absolute; right: 6px; top: 50%; transform: translateY(-50%); padding: 4px 8px; background: none; border: 0; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--navy); }
+.demo-box { margin-top: 16px; padding: 8px 10px; font-size: 12px; background: #f6f6f3; border: 1px dashed var(--border); }
+.demo-box summary { cursor: pointer; font-weight: 600; }
+.small-links { margin-top: 14px; font-size: 12px; color: var(--text-muted); display: grid; gap: 4px; }
+
+/* Home */
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+.inline-form { display: flex; gap: 8px; margin-top: 12px; }
+.steps-box { margin: 12px 0; padding: 18px; text-align: center; font-size: 13px; color: var(--text-muted); border: 1px dashed #8a8a8a; }
+
+/* Report form */
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; margin-top: 12px; }
+.reporter-box { margin-top: 8px; padding: 12px 16px; background: #f6f6f3; border: 1px solid var(--border); }
+.reporter-box h3 { font-size: 13px; margin-bottom: 8px; }
+.reporter-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 16px; }
+.form-actions { display: flex; gap: 8px; margin-top: 20px; }
+
+/* Submitted */
+.id-box { margin: 12px 0; padding: 18px 14px; font-size: 28px; font-weight: 700; letter-spacing: 0.5px; background: #eaf4fc; border: 1px dashed var(--navy); word-break: break-all; }
+.btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.status-line { display: flex; align-items: center; gap: 10px; margin-top: 12px; font-size: 13px; }
+
+/* Track */
+.track-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: baseline; }
+.track-head h2 { font-size: 16px; }
+.track-meta { font-size: 12px; color: var(--text-muted); }
+
+/* Help */
+.help-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.help-wide { grid-column: 1 / -1; }
+.help-list { margin: 8px 0 0; padding-left: 18px; display: grid; gap: 4px; font-size: 13px; }
+.help-statuses { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 8px; font-size: 13px; }
+.help-statuses li { display: flex; gap: 10px; align-items: baseline; }
+.help-details summary { cursor: pointer; font-weight: 600; margin-top: 8px; }
+.help-details ul { margin: 8px 0 0; padding-left: 18px; font-size: 13px; }
+
+@media (max-width: 720px) {
+  .two-col, .form-grid, .help-grid, .reporter-grid { grid-template-columns: 1fr; }
+  .stepper { grid-template-columns: 1fr 1fr; }
+  .topnav { padding: 10px 14px; }
+  .topnav-links { margin-left: 0; width: 100%; order: 3; }
+  .id-box { font-size: 22px; }
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+}

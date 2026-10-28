@@ -1,0 +1,6 @@
+@import "./styles/variables.css";
+@import "./styles/global.css";
+@import "./styles/components.css";
+@import "./styles/layout.css";
+@import "./styles/student.css";
+@import "./styles/staff.css";

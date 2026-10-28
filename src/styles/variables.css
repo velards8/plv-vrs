@@ -1,0 +1,24 @@
+:root {
+  --navy: #1d2366;
+  --navy-hover: #151a4d;
+  --bg: #efefea;
+  --card: #ffffff;
+  --border: #c9c9c4;
+  --border-strong: #1b1b1b;
+  --sidebar: #1c1c1e;
+  --sidebar-text: #e6e6e6;
+  --sidebar-active: #252b6b;
+  --text: #1b1b1b;
+  --text-muted: #6b6b6b;
+  --ai-bg: #e8f1fb;
+  --ai-border: #8fb4e3;
+  --warn-bg: #fff6c9;
+  --warn-border: #e5c94a;
+  --danger: #b3261e;
+  --success: #2e7d32;
+  --minor: #d6cf5c;
+  --major: #dc8c68;
+  --radius: 2px;
+  --font: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --sidebar-width: 220px;
+}
