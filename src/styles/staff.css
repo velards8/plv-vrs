@@ -104,3 +104,9 @@
 .row-actions button { padding: 0; background: none; border: 0; color: var(--navy); font-size: 12px; font-weight: 600; cursor: pointer; text-decoration: underline; }
 .two-panel { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; align-items: start; }
 @media (max-width: 860px) { .two-panel { grid-template-columns: 1fr; } }
+
+/* Shared back navigation across staff pages */
+.staff-page-navigation { display: flex; justify-content: flex-start; margin-bottom: 12px; }
+.staff-back-button { display: inline-flex; align-items: center; gap: 7px; padding: 7px 12px; color: var(--navy); background: #fff; border: 1px solid var(--border-strong); font: inherit; font-size: 13px; cursor: pointer; }
+.staff-back-button:hover { background: #f1f1ed; }
+.staff-back-button:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
